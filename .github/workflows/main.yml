@@ -37,3 +37,13 @@ jobs:
         run: |
           ls -lart
           ls -lart ./target
+  deploy:
+    needs: build
+    runs-on: subsystem-ubuntu
+    steps:
+    - name: deploy
+      run: |
+        ls -l ./target
+        java -jar jb-hello-world-maven-0.1.0.jar
+    
+      
