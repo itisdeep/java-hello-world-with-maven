@@ -44,6 +44,6 @@ jobs:
     - name: deploy
       run: |
         ls -l ./target
-        java -jar jb-hello-world-maven-0.1.0.jar
+        java -jar ./target/jb-hello-world-maven-0.1.0.jar
     
       
